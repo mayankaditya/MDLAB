@@ -1,14 +1,28 @@
 name: Request Software Access
-description: Submit this form to request download access
+description: Submit this form to request per-user software access (valid for 1 year)
 title: "Access Request: "
 labels: ["access-request"]
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill this form to request access.
+        Access is granted **per-user** and will be valid for **1 year** from approval.
+        After expiry, users may submit a renewal request.
+
   - type: input
     id: name
     attributes:
       label: Full Name
-      placeholder: e.g., Mayank Gupta
+    validations:
+      required: true
+
+  - type: input
+    id: designation
+    attributes:
+      label: Designation / Position
+      placeholder: e.g., Research Scholar, Scientist, Faculty, Engineer
     validations:
       required: true
 
@@ -16,14 +30,20 @@ body:
     id: organization
     attributes:
       label: Organization / Institution
-      placeholder: e.g., BARC / University / Company
+    validations:
+      required: true
+
+  - type: input
+    id: country
+    attributes:
+      label: Country
     validations:
       required: true
 
   - type: input
     id: email
     attributes:
-      label: Official Email Address
+      label: Official / Institutional Email Address
       placeholder: name@institution.org
     validations:
       required: true
@@ -32,17 +52,20 @@ body:
     id: purpose
     attributes:
       label: Purpose of Software Use
-      description: Briefly describe your research or application
-      placeholder: e.g., Academic research on lattice dynamics...
+      description: Briefly describe your project / research application
     validations:
       required: true
 
   - type: checkboxes
     id: agreement
     attributes:
-      label: Usage Agreement
+      label: Access & Usage Declaration
       options:
-        - label: I will not redistribute this software without permission
+        - label: I understand that access is granted on a **per-user basis** and must not be shared or transferred
           required: true
-        - label: I will cite the associated publications (if applicable)
+        - label: I agree not to redistribute or publish the software without prior permission
+          required: true
+        - label: I acknowledge that access will be valid for **1 year** and renewal will be required thereafter
+          required: true
+        - label: I will acknowledge or cite the authors / related publications where applicable
           required: false
