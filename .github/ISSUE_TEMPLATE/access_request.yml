@@ -1,5 +1,5 @@
 name: Request Software Access
-description: Submit this form to request per-user software access (valid for 1 year)
+description: Submit this form to request per-user software access
 title: "Access Request: "
 labels: ["access-request"]
 
@@ -10,6 +10,11 @@ body:
         Please fill this form to request access.
         Access is granted **per-user** and will be valid for **1 year** from approval.
         After expiry, users may submit a renewal request.
+
+        **Please cite this work if you use the software**:
+        "A molecular dynamics postprocessing tool for analyzing the structure and dynamics of materials,
+        M K Gupta, Computer Physics Communications 320 (2026) 109982,
+        doi:https://doi.org/10.1016/j.cpc.2025.109982"
 
   - type: input
     id: name
@@ -67,5 +72,12 @@ body:
           required: true
         - label: I acknowledge that access will be valid for **1 year** and renewal will be required thereafter
           required: true
-        - label: I will acknowledge or cite the authors / related publications where applicable
+        - label: Please cite the above publication if you use this software
           required: false
+## 📖 How to Cite
+
+If you use this software in your research, please cite the following work:
+
+"A molecular dynamics postprocessing tool for analyzing the structure and dynamics of materials,
+M K Gupta, Computer Physics Communications 320 (2026) 109982,
+doi:https://doi.org/10.1016/j.cpc.2025.109982"
