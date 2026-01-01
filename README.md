@@ -13,3 +13,8 @@ If you use this software in your research, please cite the following work:
 "A molecular dynamics postprocessing tool for analyzing the structure and dynamics of materials,
 M K Gupta, Computer Physics Communications 320 (2026) 109982,
 doi:https://doi.org/10.1016/j.cpc.2025.109982"
+
+
+
+📥 To download MDLAB, please first fill the  
+➡️ **[Download Request Form](../../issues/new?template=download_request.yml)**
