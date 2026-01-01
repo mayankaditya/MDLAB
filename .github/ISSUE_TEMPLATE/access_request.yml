@@ -1,0 +1,48 @@
+name: Request Software Access
+description: Submit this form to request download access
+title: "Access Request: "
+labels: ["access-request"]
+
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Full Name
+      placeholder: e.g., Mayank Gupta
+    validations:
+      required: true
+
+  - type: input
+    id: organization
+    attributes:
+      label: Organization / Institution
+      placeholder: e.g., BARC / University / Company
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: Official Email Address
+      placeholder: name@institution.org
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose of Software Use
+      description: Briefly describe your research or application
+      placeholder: e.g., Academic research on lattice dynamics...
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Usage Agreement
+      options:
+        - label: I will not redistribute this software without permission
+          required: true
+        - label: I will cite the associated publications (if applicable)
+          required: false
