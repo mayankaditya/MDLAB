@@ -16,5 +16,6 @@ doi:https://doi.org/10.1016/j.cpc.2025.109982"
 
 
 
-📥 To download MDLAB, please first fill the  
-➡️ **[Download Request Form](../../issues/new?template=download_request.yml)**
+📥 Download MDLAB — Please fill the form:
+👉 https://forms.gle/your-form-link
+
