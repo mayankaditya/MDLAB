@@ -1,0 +1,28 @@
+#  define units
+units      metal
+boundary p p p
+atom_style  atomic
+################DEEPMD_STYLE###############
+neigh_modify    every 1 delay 0 check no
+read_data       POSCAR.lmp
+pair_style      deepmd frozen_model.pb
+pair_coeff  * *
+#########################################
+variable        t equal 200                 #Define the temperature
+neighbor        2   bin
+neigh_modify    delay 0
+timestep        0.001                       #Define time step
+thermo_style    custom step etotal temp vol press
+thermo          50
+velocity        all create $t 3627941 dist gaussian mom yes
+velocity        all scale $t
+fix            1 all nvt temp $t $t 0.1    #iso 0 0 1.0
+run             100000                        #Number of timesteps
+reset_timestep 0
+
+
+dump            1         all custom 10  trajectory.lammpstrj id type xu yu zu
+dump            2         all custom 10  velocity.lammpstrj id type vx vy vz
+dump_modify     1         sort id
+dump_modify     2         sort id
+run             2000000                      #Number of timesteps
