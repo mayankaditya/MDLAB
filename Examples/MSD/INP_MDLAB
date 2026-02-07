@@ -1,0 +1,22 @@
+LAMMPS 1 1 !SOFTWARE-NAME VELOCITY-FILE-AVAILABLE  NMOL                                                                                    
+ 0 0 0 0 0 1 0 0 0 0 !DOS,ANGLE,DIFFRACTION,PDF,SQE,MSD,VAN-Hove, PROBABILITY,DIFFUSE,3D-PDF                                              
+ 2           !TYPE OF ATOM                                                                                                                
+ Sn Te      !NAME OF ELEMENTS                                                                                                            
+ 32000 32000 !Number of EACH ELEMENTS                                                                                                     
+ 1 8192   0.01  4096  10  !NSTART,NEND,DT(pico-sec),NORIGIN, NINTERVAL-FOR  DIFFRACTION/PDF                                                
+1.0 3.0 2 S P S S Na S ! Bond length limits (Min and Max) for Angle-Calculation NUMBER OF ANGLES, ANGLE-TYPE formed by type1, type2, type2
+ 10 10 10       ! (MAX)H K L for Diffraction calculation                                                                                  
+ 0.5 0     ! Broadening used for DOS CAlCULATION( Fix and % of Energy)                                                                    
+ 2000 2000 ! NSTEPIV,NSTEPINT  FOR Van-Hove                                                                                               
+ 4 0 0 !Supercell DIMENSION FOR PROBABILITY                                                                                               
+ 0 4 0                                                                                                                                    
+ 0 0 2                                                                                                                                    
+ 205 0.1         !GRID SIZE (400X400X400) and RESOLITION IN ANGSTROM--> MAXIMUM RANGE IN OUTPUT FILE=400X0.1 =40 Angstrom                 
+
+ #SQE TAG:                                                                                                                                
+ #1:QENS  !Powder Averaged from 0.2 to 4 Angstrom-1 with 0.2 step size                                                                    
+ #2:S(Q,E)! Single Crystal Coherent and Incoherent ! Need KLISTMAN                                                                        
+ #3:SED   !Single crystal along high-symmetry Direction in BZ !Need KLISTMAN                                                              
+ #4:S(Q,E)!Powder Averaged from 0.2 to 0.4 Ansgtrom-1 with 0.2 step size                                                                  
+ #5:S(Q,E)!Single Crystal Transverse and Acoustic Projection in various high Symmetry Direction in BZ !Need KLISTMAN                      
+ #6:S(Q,E)!Single Crystal Transverse and Acoustic Projection on a grid in BZ !Need KGRID 
