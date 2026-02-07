@@ -1,0 +1,2 @@
+This is an example file for calculating the mean squared displacement using MDLAB. 
+The LAMMPS trajectory file is quite large, so only the first 10 steps are uploaded; the actual calculation used 8192 frames (0.1 ps interval).
