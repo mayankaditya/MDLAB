@@ -1,1 +1,2 @@
-This is an example case for computing the coherent and incoherent dynamical strcuture factor S(Q,E) along various high symmetry directin in BZ
+This is an example case for computing the coherent and incoherent dynamical structure factor S(Q,E) along various high symmetry directions in BZ.
+The full trajectory is not provided (large file); only the first-step trajectory is provided for reference.
