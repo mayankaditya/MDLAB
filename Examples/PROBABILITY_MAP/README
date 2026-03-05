@@ -1,3 +1,5 @@
 This requires a template file name as REF.vasp (it should be the smallest unit-cell or primitive POSCAR)
-You need to provide the supercell size (3x3 matrix ) in INP_MDLAB (line number 11-13) used in MD simulation with respect to REF.vasp  
-For other tags please refere: https://www.sciencedirect.com/science/article/pii/S0010465525004837
+You need to provide the supercell size (3x3 matrix ) in INP_MDLAB (line number 11-13) used in MD simulation with respect to REF.vasp 
+It will produce probability files for each element named PROB_element.vasp, which can be viewed using VESTA or other tools. 
+
+For other tags details, please refer: https://www.sciencedirect.com/science/article/pii/S0010465525004837
