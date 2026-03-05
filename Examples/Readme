@@ -1,2 +1,9 @@
 The example input file and relevant input details are given in each case. For all the cases, LAMMPS was used, but it also works for VASP and GPUMD trajectories. You need to cheng the firts entry in INP_MDLAB to "VASP" or "GPUMD" instead of "LAMMPS", rest of the details are same for all the calculations. 
 
+For LAMMPS, the default trajectory file name is "trajectory.lammpstrj" and the velocity file is "velocity.lammpstrj"
+For VASP, the default trajectory file name is XDATCAR
+For GPUMD, the default trajectory file name is movie.xyz
+
+We will soon update the examples for other two cases:VASP/GPUMD
+
+
