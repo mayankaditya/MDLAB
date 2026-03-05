@@ -1,1 +1,2 @@
+The example input file and relevant input details are given in each case. For all the cases, LAMMPS was used, but it also works for VASP and GPUMD trajectories. You need to cheng the firts entry in INP_MDLAB to "VASP" or "GPUMD" instead of "LAMMPS", rest of the details are same for all the calculations. 
 
