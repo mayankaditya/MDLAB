@@ -1,0 +1,14 @@
+3
+0 0 0      0.5 0 0 10
+0.5 0.5 0  0 0 0   10                                   
+0 0 0      0 0 0.5 5
+
+0  0.6666666667 -0.3333333333  0.0000000000 
+HEX                         ! Bravais lattice type
+  100                       ! Number of points on each path
+    4                       ! Number paths between special points
+GM  M                       ! Starting and ending special point
+M   K                       !
+K   GM                      !
+GM  A                       !
+
