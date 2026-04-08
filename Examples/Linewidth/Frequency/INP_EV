@@ -1,0 +1,17 @@
+2    
+21
+band.yaml
+0
+300
+1
+
+
+3522  
+
+OPEN(1,FILE="INP_EV")
+READ(1,*)NQ
+READ(1,*)PATOM
+READ(1,*)BNDFILE
+READ(1,*)IDOS
+READ(1,*)TEMP
+READ(1,*)IQSTART
