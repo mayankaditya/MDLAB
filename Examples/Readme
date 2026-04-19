@@ -2,7 +2,7 @@ The example input file and relevant input details are given in each case. For al
 
 For LAMMPS, the default trajectory file name is "trajectory.lammpstrj" and the velocity file is "velocity.lammpstrj"
 For VASP, the default trajectory file name is XDATCAR
-For GPUMD, the default trajectory file name is movie.xyz
+For GPUMD, the default trajectory file name is dump.xyz
 
 We will soon update the examples for other two cases:VASP/GPUMD
 
